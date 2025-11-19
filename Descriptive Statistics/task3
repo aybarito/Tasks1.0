@@ -1,1 +1,8 @@
+[10, 12, 15, 20, 25, 30, 40, 50]
+Calculate the skewness and kurtosis of the data.
+n = 8
+mean = 25.25
+sample standard deviation s ≈ 14.10926747111375
+Skewness ≈ 0.7719239123897182
+Excess kurtosis ≈ -0.40307702646803634
 
