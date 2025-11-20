@@ -1,0 +1,48 @@
+The task:
+An educator compares test scores between two teaching methods: in-person (scores: [75, 80, 78, 82, 79]) and online (scores: [85, 88, 84, 90, 87]). 
+The means are 78.8 and 86.8, respectively, and the standard deviations are 2.59 and 2.17. Perform a two-sample t-test to test the hypothesis that
+the average scores differ between the methods (use a significance level of 0.05). State the null hypothesis (H₀: μ₁ = μ₂) 
+and alternative hypothesis (H₁: μ₁ ≠ μ₂), calculate the t-statistic using the formula t = (x̄₁ - x̄₂) / √(s₁²/n₁ + s₂²/n₂), 
+and compare it to the critical t-value of 2.306 (for a two-tailed test with 8 degrees of freedom). Interpret the results.
+
+Two-Sample t-Test (Independent Samples)
+
+Null hypothesis: mu1 = mu2
+Alternative hypothesis: mu1 ≠ mu2
+
+Means:
+x1 = 78.8
+x2 = 86.8
+
+Standard deviations:
+s1 = 2.59
+s2 = 2.17
+
+Sample sizes:
+n1 = 5
+n2 = 5
+
+Compute numerator:
+x1 - x2 = -8.0
+
+Compute denominator:
+s1^2 = 6.7081
+s2^2 = 4.7089
+s1^2 / n1 = 1.34162
+s2^2 / n2 = 0.94178
+Sum = 2.28340
+Square root = 1.51109
+
+t statistic:
+t = -8.0 / 1.51109 = -5.29418
+Absolute value = 5.29418
+
+Critical value (two-tailed, alpha = 0.05, df = 8):
+t_crit = 2.306
+
+Decision:
+Since 5.29418 > 2.306, reject the null hypothesis.
+
+Conclusion:
+There is a statistically significant difference between the average scores of the two teaching methods.
+The online method shows higher scores.
