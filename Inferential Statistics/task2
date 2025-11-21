@@ -1,0 +1,45 @@
+Chi-Square Test of Independence
+
+Observed frequencies (O):
+
+                 Prefer X   Prefer Y   Total
+New customers        25         25       50
+Returning customers  35         15       50
+Column totals        60         40      100
+
+Hypotheses:
+H0: Product preference and customer segment are independent.
+H1: Product preference and customer segment are not independent.
+Significance level: α = 0.05
+Critical value (df = 1): χ²_crit = 3.841
+
+Step 1: Compute expected frequencies E = (row total × column total) / N
+
+E(New, X)      = 50 × 60 / 100 = 30
+E(New, Y)      = 50 × 40 / 100 = 20
+E(Returning,X) = 50 × 60 / 100 = 30
+E(Returning,Y) = 50 × 40 / 100 = 20
+
+Expected table (E):
+
+                 Prefer X   Prefer Y
+New customers        30         20
+Returning customers  30         20
+
+Step 2: Compute chi-square components (O - E)² / E
+
+(New, X):      (25 - 30)² / 30 = 25 / 30 = 0.83333
+(New, Y):      (25 - 20)² / 20 = 25 / 20 = 1.25
+(Returning, X):(35 - 30)² / 30 = 25 / 30 = 0.83333
+(Returning, Y):(15 - 20)² / 20 = 25 / 20 = 1.25
+
+Step 3: Chi-square statistic
+χ² = 0.83333 + 1.25 + 0.83333 + 1.25 = 4.16666 ≈ 4.17
+
+Step 4: Compare with critical value
+χ² = 4.17 > 3.841 → Reject H0.
+
+Conclusion:
+There is a statistically significant association between customer segment
+(new vs. returning) and product preference. Product preference is not independent
+of customer type.
